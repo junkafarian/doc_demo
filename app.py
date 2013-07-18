@@ -13,13 +13,24 @@ class LogHandler(object):
         messages
     """
 
-    def log_request(self):
+    my_attribute = 'foo'
+    """the reason for being"""
+
+    def log_request(self, debug=False):
         """ Logs details of the current request context provided by Flask.
 
-        Raises:
+        **Args**:
+            runtime: int
+                     timeout for length of run
+
+        **Kwargs**:
+            debug: bool
+                   debug flag
+
+        **Raises**:
             RuntimeError: if called outside a request context
 
-        Returns:
+        **Returns**:
             None
         """
         logger = logging.getLogger(request.url)

@@ -10,10 +10,12 @@ View the project on `GitHub <https://github.com/junkafarian/doc_demo>`_
 Welcome to docs's documentation!
 ================================
 
+For the logic behind the app see :py:mod:`app.index`
+
 Narrative docs:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    intro
 
